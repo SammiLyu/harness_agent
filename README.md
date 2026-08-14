@@ -81,10 +81,10 @@ Once the interview profile is generated, the **Deployment Skill** can consume it
     ```bash
     @deployment
     ```
-    This reads `output/interview_profile.md`, fills in the gaps from `templates/deployment_workflow_template.md` (injecting correct proxy settings, environment files, and SSO setup lines), and generates a fully-populated, placeholder-free `output/output.md` (the local `01_manual_setup.md` provisioning guide).
+    This reads `output/interview_profile.md`, fills in the gaps from `templates/deployment_workflow_template.md` (injecting correct proxy settings, environment files, and SSO setup lines), and generates a fully-populated, placeholder-free `output/deployment.md` (the local `01_manual_setup.md` provisioning guide) as its own tier file. It also creates or updates `output/AGENTS.md`, the index file that points to every generated tier — Tier 1-3 plus this guide — and carries a placeholder section for the mandate/preference hierarchy across tiers.
 
 ### 3. The "One Core, Many Pointers" Pattern
-To avoid duplicating large rulesets across multiple assistants, always use thin pointer files. Write your substantive rules once into `output/AGENTS.md` (completely agent-agnostic), and create 3-line pointer files for each tool in use:
+To avoid duplicating large rulesets across multiple assistants, always use thin pointer files. Write your substantive rules once into each tier's own file (`org_general.md`, `platform.md`, `team_preferences.md`, `deployment.md`) — `output/AGENTS.md` itself stays a thin index pointing at those files, not a copy of their content — and create 3-line pointer files for each tool in use:
 
 *   **For Claude Code (`CLAUDE.md`)**:
     ```markdown
