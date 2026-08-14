@@ -1,4 +1,4 @@
-## Coding Agent Workspace Provisioning & Manual Setup Guide (see .claude/skills/deployment/SKILL.md)
+## Coding Agent Workspace Provisioning & Manual Setup Guide (see skills/deployment/SKILL.md)
 
 This guide details the step-by-step process of manually installing, configuring, and verifying the coding agent environment on [PLATFORM_NAME], ensuring compliance with [ORGANIZATION_NAME] security and directory policies.
 

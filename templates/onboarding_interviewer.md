@@ -6,7 +6,7 @@ You will load and refer to the following four hierarchical templates to construc
 1. `org_general_template.md` (Tier 1: Global Organization Safety & Trust)
 2. `platform_template.md` (Tier 2: Compute Environment & Default Storage Layouts)
 3. `team_preferences_template.md` (Tier 3: Team-Level Coding Style, Git boundaries, and Overrides)
-4. `deployment_workflow_template.md` (Provisioning & Manual Setup Guide — see `.claude/skills/deployment/SKILL.md`)
+4. `deployment_workflow_template.md` (Provisioning & Manual Setup Guide — see `skills/deployment/SKILL.md`)
 
 ---
 
